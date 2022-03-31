@@ -15,4 +15,6 @@ Included in the `results` are the outputs of fitting the model, including
 -  The data for plotting the conidtional intensity function
 -  The plots for each film of all of the above
 
+This comprises a large number of files and so they are collected together in zip files.
+
 The results of fitting the model to each film are also stored in the `results` folder.
