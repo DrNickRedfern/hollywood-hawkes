@@ -134,8 +134,8 @@ for(i in 1:dim(dat)[2]){
   df_ks <- data.frame("r_times" = ks_times, "cdf" = cdf, ref = unif)
   write_csv(df_ks, here("results", "data_output", ks_data))
   
-  # Polygon for 99% confidence interval
-  v <- 1.63/sqrt(n)
+  # Polygon for 99.9% confidence interval
+  v <- 1.95/sqrt(n)
   x <- c(0, n*v, n, n, n*(1-v), 0)
   y <- c(0, 0, 1-v, 1, 1, v)
   df_poly <- data.frame(x = x, y = y)
