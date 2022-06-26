@@ -8,11 +8,6 @@ pacman::p_load(plotly, here, tidyverse, ggpubr, ggtext, viridis, Cairo)
 # Load the results data
 df <- read_csv(here("data_ouput", "hp_exp_results.csv"))
 
-# Filter out films that were not fitted by the model ----------
-df <- df %>%
-  filter(!title %in% c("Brief Encounter", "Beneath the Planet of the Apes")) %>%
-  arrange(genre, year, title)
-
 # Parameters against time ----------
 # lambda0 by time
 time_lambda <- ggplot(data = df) +
